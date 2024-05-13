@@ -124,7 +124,7 @@ function obtenerSalariosIntegrantes(){
     const $integrantes = document.querySelectorAll(".integrante input");
     const salarios = [];
     for (let i=0; i<$integrantes.length; i++){
-        if (Number($integrantes[i].value) !== "") {
+        if (Number($integrantes[i].value) > 0) {
             salarios.push(Number($integrantes[i].value));
         }
       
