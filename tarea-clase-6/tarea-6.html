@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tarea 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='main-6.css'/>
+    
+</head>
+<body>
+    <form id="calculador-salarios">
+        <label for="cantidad-integrantes-trabajan">Ingrese la cantidad de integrantes de su familia que trabajen</label>
+        <input type="number" id="cantidad-integrantes-trabajan">
+
+        <button type="submit" id="agregar">Agregar</button>
+        <button type="submit" id="quitar">Quitar</button>
+
+        <div id="integrantes">
+            <div id="boquita"></div>
+        </div>
+
+        <button type="button" id="calcular" class="oculto" >Calcular</button>
+
+        <div id="analisis" class="oculto">
+            <p>El salario anual mayor es: <strong id="mayor-salario"></strong></p>
+            <p>El salario anual menor es: <strong id="menor-salario"></strong></p>
+            <p>El salario anual promedio es: <strong id="anual-salario"></strong></p>
+            <p>El salario mensual promedio es: <strong id="mensual-salario"></strong></p>
+        </div>
+
+        <button type="reset" id="resetear">Resetear</button>
+    </form>
+    <script type="text/javascript" src="calculos-6.js"></script>
+    <script type="text/javascript" src="tarea-6.js"></script>
+</body>
+</html>
