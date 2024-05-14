@@ -23,22 +23,17 @@ function validarNombre(nombre) {
 
 function validarCiudad(ciudad){
     if (ciudad.length === 0) {
-        return "Este campo debe tener al menos un caracter";
-    }
-
-    if (ciudad.length > 50) {
-        return "Este campo debe tener menos de 50 caracteres";
-    }
+        return "El campo ciudad no puede estar vacío";
+    } 
     return "";
 }
 
 function validarDescripcionRegalo(descripcionRegalo) {
-    if (descripcionRegalo.length === 0) {
-        return "Este campo debe tener al menos un caracter";
+    if (descripcionRegalo.length >= 100) {
+        return "Este campo descripción es muy largo";
+    } else if (descripcionRegalo.length === 0) {
+        return "Este campo descripción no puede estar vacío";
+    } else {
+        return "";
     }
-
-    if (descripcionRegalo.length > 50) {
-        return "Este campo debe tener menos de 50 caracteres";
-    }
-    return "";
 }

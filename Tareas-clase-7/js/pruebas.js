@@ -1,43 +1,39 @@
-function probarValidarNombre() {
-  console.assert(
-      validarNombre('') === 'Este campo debe tener al menos 1 caracter',
-      'Validar nombre no validó que el nombre no sea vacío',
-  );
+const $form = document.querySelector("#carta-a-santa");
 
-  console.assert(
-      validarNombre(
-          '111111111111111111111111111111111111111111111111111111111111111111111111111111111111111') ===
-      'Este campo debe tener menos de 50 caracteres',
-      'Validar nombre no validó que el nombre sea menor a 50 caracteres',
-  );
+const nombre = $form.nombre.value;
+const ciudad = $form.ciudad.value;
+const comportamiento = $form.comportamiento.value;
+const descripcionRegalo = $form["descripcion-regalo"].value;
+
+console.log(nombre);
+console.log(ciudad);
+console.log(comportamiento);
+console.log(descripcionRegalo);
+
+function validarNombre(nombre) {
+    if (nombre.length === 0) {
+        return "Este campo debe tener al menos 1 caracter";
+    }
+
+    if (nombre.length > 50) {
+        return "Este campo debe tener menos de 50 caracteres";
+    }
+    return "";
 }
-probarValidarNombre();
 
-function probarValidarCiudad() {
-    console.assert(
-        validarCiudad("") === "Este campo debe tener al menos 1 caracter",
-        "Validar ciudad no validó que que ciudad no sea vacío",
-    );
-
-    console.assert(
-        validarCiudad(
-            "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111") ===
-        "Este campo debe tener menos de 50 caracteres",
-        "Validar ciudad no validó que ciudad sea menor a 50 caracteres",
-    );
+function validarCiudad(ciudad){
+    if (ciudad.length === 0) {
+        return "El campo ciudad no puede estar vacío";
+    } 
+    return "";
 }
-probarValidarCiudad();
 
-function provarvalidarDescripcionRegalo() {
-    console.assert(
-        validarDescripcionRegalo("") === 
-        "Este campo debe tener al menos un caracter", 
-        "Validar descripcionRegalo no valido que descripcionRegalo no sea vacío ",
-    );
-    console.assert(
-        validarDescripcionRegalo("1111111111111111111111111111111111111111111111111111111111111111111111111111111111111") === 
-        "Este campo debe tener menos de 50 caracteres", 
-        "Validar descripcionRegalo no valido que descripcionRegalo sea menor a 50 caracteres",
-    );
+function validarDescripcionRegalo(descripcionRegalo) {
+    if (descripcionRegalo.length >= 100) {
+        return "Este campo descripción es muy largo";
+    } else if (descripcionRegalo.length === 0) {
+        return "Este campo descripción no puede estar vacío";
+    } else {
+        return "";
+    }
 }
-provarvalidarDescripcionRegalo();
