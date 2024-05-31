@@ -69,6 +69,7 @@ function crearIntegrantes(cantidadIntegrantesTrabajan){
     
     if (cantidadIntegrantesTrabajan > 0){
         mostrarBotonCalculo();
+        mostrarBotonReseteo();
     } else {
         resetear();
     }
@@ -98,6 +99,7 @@ function resetear(){
     borrarIntegrantesAnteriores();
     ocultarBotonCalculo();
     ocultarResultados();
+    ocultarBotonReseteo();
 }
 
 function ocultarBotonCalculo(){
@@ -105,7 +107,15 @@ function ocultarBotonCalculo(){
 }
 
 function mostrarBotonCalculo(){
-    document.querySelector("#calcular").className = "btn btn-primary col-3";
+    document.querySelector("#calcular").className = "btn btn-primary col-3 m-2";
+}
+
+function ocultarBotonReseteo(){
+    document.quertSelector("#resetear").className = "oculto";
+}
+
+function mostrarBotonReseteo(){
+    document.querySelector("#resetear").className = "btn btn-danger col-3 m-2";
 }
 
 function ocultarResultados(){

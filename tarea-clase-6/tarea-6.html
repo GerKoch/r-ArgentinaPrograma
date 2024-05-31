@@ -13,20 +13,20 @@
 
 <body>
     <div class="container d-flex justify-content-center align-items-center">
-        <form id="calculador-salarios" class="m-3">
+        <form id="calculador-salarios" class="m-3 border w-50 p-3 mb-2 bg-light text-dark">
             <div class="mb-3">
                 <label for="cantidad-integrantes-trabajan" class="form-label">Ingrese la cantidad de integrantes de su
                     familia que trabajen</label>
                 <input type="number" name="cantidad" id="cantidad-integrantes-trabajan" class="form-control">
             </div>
-            <button type="submit" id="agregar" class="btn btn-primary col-3">Agregar</button>
-            <button type="submit" id="quitar" class="btn btn-secondary col-3">Quitar</button>
+            <button type="submit" id="agregar" class="btn btn-primary col-3 m-2">Agregar</button>
+            <button type="submit" id="quitar" class="btn btn-secondary col-3 m-2">Quitar</button>
 
             <div id="integrantes">
 
             </div>
 
-            <button type="button" id="calcular" class="oculto btn btn-primary">Calcular</button>
+            <button type="button" id="calcular" class="oculto">Calcular</button>
 
             <div id="analisis" class="oculto">
                 <p>El salario anual mayor es: <strong id="mayor-salario"></strong></p>
@@ -34,7 +34,7 @@
                 <p>El salario anual promedio es: <strong id="anual-salario"></strong></p>
                 <p>El salario mensual promedio es: <strong id="mensual-salario"></strong></p>
             </div>
-            <button type="reset" id="resetear" class="btn btn-danger col-3">Resetear</button>
+            <button type="reset" id="resetear" class="oculto">Resetear</button>
         </form>
 
     </div>
