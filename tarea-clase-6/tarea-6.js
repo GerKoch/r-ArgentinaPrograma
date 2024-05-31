@@ -105,7 +105,7 @@ function ocultarBotonCalculo(){
 }
 
 function mostrarBotonCalculo(){
-    document.querySelector("#calcular").className = "";
+    document.querySelector("#calcular").className = "btn btn-primary col-3";
 }
 
 function ocultarResultados(){
@@ -132,3 +132,16 @@ function obtenerSalariosIntegrantes(){
     return salarios;
 }
 
+
+
+function validarCantidadIntegrantesTrabajan(cantidad){
+    if(!/^[0-9]+$/.test(cantidad)){
+        return "Ingresar sólo números positivos";
+    } else if(salary === ""){
+        return "El campo cantidad integrantes trabajan no puede estar vacío";
+    }else {
+    return "";
+    }
+}
+
+validarCantidadIntegrantesTrabajan();

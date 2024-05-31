@@ -1,0 +1,22 @@
+{
+  "name": "r-argentinaprograma",
+  "version": "1.0.0",
+  "description": "Tareas de r/ArgentinaPrograma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GerKoch/r-ArgentinaPrograma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GerKoch/r-ArgentinaPrograma/issues"
+  },
+  "homepage": "https://github.com/GerKoch/r-ArgentinaPrograma#readme",
+  "dependencies": {
+    "boostrap": "^2.0.0"
+  }
+}
