@@ -4,11 +4,16 @@
   "description": "",
   "main": "calculos-6.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-run": "cypress run",
+    "cypress-dev": "cypress open"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "boostrap": "^2.0.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.11.0"
   }
 }

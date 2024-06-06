@@ -1,0 +1,19 @@
+{
+  "name": "tarea-clase-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculos-6.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-dev": "cypress open",
+    "cypress-run": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boostrap": "^2.0.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.11.0"
+  }
+}

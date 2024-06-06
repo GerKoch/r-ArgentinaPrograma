@@ -111,7 +111,7 @@ function mostrarBotonCalculo(){
 }
 
 function ocultarBotonReseteo(){
-    document.quertSelector("#resetear").className = "oculto";
+    document.querySelector("#resetear").className = "oculto";
 }
 
 function mostrarBotonReseteo(){
@@ -154,4 +154,4 @@ function validarCantidadIntegrantesTrabajan(cantidad){
     }
 }
 
-validarCantidadIntegrantesTrabajan();
+validarCantidadIntegrantesTrabajan(); 
