@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none;
-}
-
 body {
     min-height: 100vh;
     background-color: white;
@@ -28,20 +24,30 @@ main {
     padding: 5rem;
 }
 
-.buttonPag {
+.navigation {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.pokemon-imagen img {
+.pokemon-image img {
     width: 100%;
     max-width: 10rem;
 }
 
-.pokemon-imagen {
+.pokemon-image {
     padding-inline: 1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-weight: bold;
+}
+
+.pokemon {
+    background-color: rgb(124, 84, 25);
 }
 
 .pokemon-info {
