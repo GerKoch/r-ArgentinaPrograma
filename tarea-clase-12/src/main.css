@@ -31,8 +31,7 @@ main {
 }
 
 .pokemon-image img {
-    width: 100%;
-    max-width: 10rem;
+    max-width: 50%;
 }
 
 .pokemon-image {
@@ -40,6 +39,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1000%;
+}
+
+.dataPokemon {
+    max-width: 100%;
 }
 
 p {
@@ -47,7 +51,7 @@ p {
 }
 
 .pokemon {
-    background-color: rgb(124, 84, 25);
+    width: 100%;
 }
 
 .pokemon-info {
@@ -108,3 +112,63 @@ p {
     gap: 1rem;
     font-size: .95rem;
 }
+
+.modalContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.modalContainer > img {
+    width: 30%;
+    margin: 5%;
+}
+
+.modalContainer > span {
+    margin-left: 20%;
+}
+
+.modalInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.containerModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.containerModal .contentModal {
+    background-color: #f0f0f0;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #636460;
+    margin-top: 10%;
+    width: 50%;
+    height: 60%;
+}
+
+.containerModal .closeModal {
+    color: rgb(192, 40, 40);
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.containerModal .closeModal.focus {
+    color: #0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
