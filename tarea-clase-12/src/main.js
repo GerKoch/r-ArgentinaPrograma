@@ -38,7 +38,6 @@ const getInfoPokemon = async (pokemonUrl) => {
 }
 
 const CardPokemon = (data) => {
-    console.log(data);
     let card = document.createElement("div");
     let content = `
         <div class="pokemon">
@@ -92,7 +91,6 @@ const CardPokemon = (data) => {
         modal.appendChild(cardModal);
 
         const closeModal = document.querySelector(".closeModal");
-        console.log(closeModal);
 
         closeModal.onclick = function () {
             modalPokemon.style.display = "none";
