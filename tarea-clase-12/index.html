@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,35 +8,26 @@
     <title>Pokedex</title>
     <link rel="stylesheet" href="./src/main.css">
 </head>
-
 <body>
-
     <header>
         <nav class="row g-3">
             <div class="p-3 d-flex justify-content-center">
                 <img src="./src/img/pokédex.png" alt="Logo Pokédex">
             </div>   
-            <div class="navigation">
-                <button class="btn btn-pag btn-light" onclick="prev()">Anterior</button>
-                <button class="btn btn-pag btn-light" onclick="next()">Siguiente</button>
+            <div class="buttons" id="buttonsPagination">
+
             </div>
         </nav>
     </header>
     <main>
         <div id="container">
-            <div class="pokemon-todos" id="listPokemon">
-                
-            </div>
+            <div class="pokemon-todos" id="listPokemon" />
         </div>
 
          <div class="containerModal" id="modalPokemon">
             <div class="contentModal" /> 
-               
-                 
-             
         </div>                 
     </main>
-    <script src="./src/main.js"></script>
+    <script src="./src/main.js" type="module"></script>
 </body>
-
 </html>

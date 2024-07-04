@@ -31,7 +31,12 @@ main {
 }
 
 .pokemon-image img {
-    max-width: 50%;
+    width: 100%;
+    max-width: 100px;
+    min-width: 50px;
+    height: 100%;
+    max-height: 200px;
+    object-fit: contain;
 }
 
 .pokemon-image {
@@ -39,19 +44,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1000%;
+    max-width: 100%;
 }
 
 .dataPokemon {
-    max-width: 100%;
+    max-width: 100px;
 }
 
 p {
     font-weight: bold;
-}
-
-.pokemon {
-    width: 100%;
 }
 
 .pokemon-info {
@@ -75,6 +76,7 @@ p {
     box-shadow: 0 0 3rem -1rem rgba(0,0,0,.25);
     padding-block: 1rem;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .nombre-contenedor {
@@ -115,12 +117,15 @@ p {
 
 .modalContainer {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 .modalContainer > img {
-    width: 30%;
-    margin: 5%;
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 200px;
+    object-fit: contain;
 }
 
 .modalContainer > span {
@@ -151,10 +156,14 @@ p {
     background-color: #f0f0f0;
     margin: auto;
     padding: 25px;
-    border: 1px solid #636460;
+    box-shadow: 0 0 3rem -1rem rgba(0,0,0,.50);
     margin-top: 10%;
-    width: 50%;
-    height: 60%;
+    width: 100%;
+    max-width: 752px;
+    min-width: 524px;
+    height: auto;
+    min-height: 50px;
+    border-radius: 5%;
 }
 
 .containerModal .closeModal {
@@ -169,6 +178,11 @@ p {
     color: #0000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
